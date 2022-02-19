@@ -19,7 +19,7 @@ void insert_front(int ele)
         else if(front==0 && rear==0)
         {
                 de[front]=ele;
-                rear=rear+1;
+                front--;
         }
         c++;
 }
@@ -48,12 +48,7 @@ void delete_front()
 {
         if(c>0)
         {
-        if(front==0)
-        {
-                printf("deleted:%d\n ",de[front]);
-                front=n-1;
-        }
-        else if(front==n-1)
+     if(front==n-1)
         {
                 printf("deleted:%d",de[front]);
            front=0;
@@ -86,7 +81,7 @@ void delete_rear()
 void display()
 {
   int i=front;
-        while(i!=rear)
+        while(i!=rear+1)
         {
                 printf("%d ",de[i]);
                 i=(i+1)%n;
@@ -96,12 +91,12 @@ void main()
 {
         int n,a;
         printf("==================menu=================");
-        printf("enter 1 to insert at front\nenter 2 to insert at rear\nenter 3 to delete at front\nenter 4 to delete at rear\n");                                                                                             76,9-23       71%
+        printf("enter 1 to insert at front\nenter 2 to insert at rear\nenter 3 to delete at front\nenter 4 to delete at rear\n");
         scanf("%d",&n);
         insert_front(6);
         insert_rear(8);
         insert_front(10);
-        if(n==1)                                                                                      81,9-23       76%
+        if(n==1)                                                                                    
         {
                 printf("enter element: ");
                 scanf("%d",&a);
