@@ -31,7 +31,7 @@ void Heapsort(int a[], int n)
 {
  int i, t;
  Heapify(a,n);
- for( i = n; i > 1; i--)
+ for( i = n; i >=1; i--)
  {
  t = a[i];
  a[i] = a[1];
