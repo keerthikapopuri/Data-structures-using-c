@@ -31,7 +31,7 @@ int deleteq()
 }
 void display()
 {
-        for(int i=front;i<=rear;i++)
+        for(int i=front;i<=rear;i=(i+1)%10)
         {
                 printf("%d ",cir[i]);
         }
