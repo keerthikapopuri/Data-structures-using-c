@@ -45,10 +45,10 @@ void main()
  printf("\nEnter size of Heap:");
  scanf("%d",&n);
  printf("\nEnter elements of heap:");
- for(i = 1; i< n; i++)
+ for(i = 1; i<=n; i++)
  scanf("%d",&a[i]);
  Heapsort(a,n);
  printf("\n Sorted Array: \n");
- for(i = 1; i< n; i++)
+ for(i = 1; i<=n; i++)
  printf("%d ",a[i]);
 }
