@@ -48,7 +48,7 @@ void display(struct node* head)
     }
 }
 
-struct node* concatenation (struct node head1,struct node head2) 
+struct node* concatenation (struct node *head1,struct node *head2) 
 {
     struct node *temp1 = head1, *temp2 = head2;
     while(temp1->next!=NULL)
