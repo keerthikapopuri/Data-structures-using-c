@@ -143,7 +143,8 @@ void delete_pos()
         for(i=0;i<pos-1;i++)
            {
                 temp=temp->next;
-                temp->next=temp->next->next;
+               
         }
+         temp->next=temp->next->next;
         display();
 }
